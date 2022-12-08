@@ -16,3 +16,21 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+
+/* slider  */
+.carousel-inner{
+    max-height: 30rem !important;
+}
+
+.carousel-inner img{
+    position: relative;
+    top: -200px;
+}
+
+
+/* mediaqueries */
+@media (max-width: 768px){
+    #intro{
+        width: 90% !important;
+    }
+}
