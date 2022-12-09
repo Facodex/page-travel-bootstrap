@@ -22,15 +22,32 @@ body{
     max-height: 30rem !important;
 }
 
-.carousel-inner img{
-    position: relative;
-    top: -200px;
+/* services */
+.imgServices{
+    width: 50%;
 }
 
+/* seccion local */
+.temperaturas div :first-child{
+    border-right: 1px solid black;
+    /* padding-left: 25px; */
+}
+.temperaturas div{
+    margin-left: 30px;
+    text-align: center;
+}
 
 /* mediaqueries */
+/* large  */
+@media (min-width: 768px){
+    .carousel-inner img{
+        position: relative;
+        top: -200px;
+    }
+}
+/* medium */
 @media (max-width: 768px){
-    #intro{
+    #intro, #equipo{
         width: 90% !important;
     }
 }
