@@ -14,7 +14,7 @@
 
     <!-- header  -->
     <header class="container-fluid bg-primary d-flex justify-content-center">
-        <p class="text-light mb-0 p-2 fs-6">Contact us (+549)-3624584781</p>
+        <p class="text-light mb-0 p-2 fs-6">Contactanos (+549)-3624584781</p>
     </header>
 
     <!-- navbar -->
@@ -107,46 +107,102 @@
     </section>
 
     <!-- acerca de nosotros  -->
-    <section>
-        <div class="w-75 m-auto text-center" id="equipo">
+    <section class="about">
+        <div class="w-75 m-auto mb-4 text-center" id="equipo">
             <h1 class="my-4 fs-2">Equipo comprometido de <span class="text-primary">profesionales</span></h1>
-            <p class="fs-4">Lorem ipsum dolor sit amet <span class="text-primary"> Lorem ipsum </span>dolor sit amet consectetur adipisicing elit. Numquam, delectus. firulais lorem ipsum dolor sit.</p>
+            <p class="fs-4">Lorem ipsum dolor sit amet <span class="text-primary"> Lorem ipsum </span>dolor sit amet
+                consectetur adipisicing elit. Numquam, delectus. firulais lorem ipsum dolor sit.</p>
             <img class="w-75 rounded mx-auto" src="./img/team-sm.jpg">
         </div>
 
-        <div class="local row my-5 w-75 mx-auto">
-            <div class="mapa col-lg-4 col-sm-12">
-                <img class="w-100 rounded mx-auto" src="./img/mapa-sm.jpg">
+        <div class="local d-flex px-5 pt-4 justify-content-center align-items-center row border-top border-2">
+            <div class="mapa col-lg-4 col-md-12">
+
             </div>
-            <div class='col-lg-8 col-sm-12'>
-                <div class="wrapper">
-                    <h2>Ubicado en CHaco, Argentina</h2>
-                    <h2 class="text-primary mb-4" id="typeWriter"></h2>
-                    <p class="fs-5 text-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquid provident facere laborum excepturi laboriosam!</p>
-                    <section class="temperaturas d-flex">
+            <div class='col-lg-8 col-md-12'>
+                <div class="wrapper ">
+                    <h2>Ubicado en Chaco, Argentina</h2>
+                    <h2 class="text-primary mb-4" id="typewriter"></h2>
+                    <p class="fs-5 text-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquid
+                        provident facere laborum excepturi laboriosam!</p>
+                    <section id="numeros-local" class="d-flex">
                         <div>
-                            <p class="text-primary">248</p>
-                            <p class="text-center">Dias de sol</p>
+                            <p class="text-primary fs-5">248</p>
+                            <p>Dias de sol</p>
                         </div>
                         <div>
-                            <p class="text-primary">100%</p>
-                            <p class="text-center">Aprovado</p>
+                            <p class="text-primary fs-5">100%</p>
+                            <p>Aprobados</p>
                         </div>
                         <div>
-                            <p class="text-primary">40°C</p>
-                            <p class="text-center">Temperatura</p>
+                            <p class="text-primary fs-5">40°C</p>
+                            <p>Temperatura</p>
                         </div>
                     </section>
                 </div>
             </div>
         </div>
+
+    </section>
+
+
+    <!-- formulario  -->
+
+    <section class="border-bottom border-secondary border-2 py-2" id="seccion-contacto">
+
+        <div class="container rounded w-75 m-auto py-2" id="contenedor-formulario">
+            <div id="titulo-formulario" class="text-center ">
+                <img class="img-message" src="./img/contact-bootstrap.png" alt="contact">
+                <h2>Contacto</h2>
+                <p class="fs-5">Hace realidad tus sueños y viaja :)</p>
+                <form action="#">
+                    <div class="mb-3">
+                        <input required id="email" type="email" class="form-control" placeholder="nombre@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <input required id="nombre" type="text" class="form-control" placeholder="Raul Gimenez">
+                    </div>
+                    <div class="mb-3">
+                        <input required id="tel" type="tel" class="form-control" placeholder="+549-3568987546">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
         
     </section>
 
 
+    <!-- footer -->
+
+    <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 pt-3 px-3">Facodex &copy; Desarrollador WEB</p>
+        <div class="iconos">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-half" viewBox="0 0 16 16">
+                <path d="M8 2.748v11.047c3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+                <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+              </svg>
+        </div>
+    </footer>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-        </script>
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

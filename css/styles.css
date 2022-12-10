@@ -28,24 +28,90 @@ body{
 }
 
 /* seccion local */
-.temperaturas div :first-child{
-    border-right: 1px solid black;
-    /* padding-left: 25px; */
+.about{
+    margin-bottom: 170px;
 }
-.temperaturas div{
-    margin-left: 30px;
-    text-align: center;
+.mapa{
+    background-image: url('../img/mapa-sm.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    box-shadow: 2px 6px 8px cornflowerblue;
+    border-radius: 5px;
 }
 
+#local{
+    background-color: #f3f3f3;
+}
+
+
+.wrapper{
+    margin-left: 100px;
+}
+
+/* seccion de temperaturas  */
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+/* para trabajar sobre todos los div de #numeros-local menos el ultimo */
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin:0;
+}
+
+/* formulario del footer  */
+#seccion-contacto{
+    background-color: #0099ff;
+}
+
+#titulo-formulario{
+    color: #3f3f3f;
+}
+#contenedor-formulario{
+    background-color: #fff;
+}
+
+.img-message{
+    width: 300px;
+    height: 300px;
+}
+/* footer  */
+footer{
+    background-color: #0667a8;
+    color: #fff;
+}
+    
+
+
+
 /* mediaqueries */
-/* large  */
+/* hacia pantalla ancha  */
+@media (max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+    }
+}
 @media (min-width: 768px){
     .carousel-inner img{
         position: relative;
-        top: -200px;
+        top: -110px;
     }
 }
-/* medium */
+/* hasta pantalla media medium */
 @media (max-width: 768px){
     #intro, #equipo{
         width: 90% !important;
